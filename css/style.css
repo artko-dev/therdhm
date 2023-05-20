@@ -1,0 +1,631 @@
+/* Make a primary settings */
+* {
+   padding: 0;
+   margin: 0 auto;
+   font-family: sans-serif;
+}
+
+/* header style */
+.header_bar {
+   background-color: rgb(63, 63, 206);
+   color: #fff;
+   /*padding: 10px;*/
+   position: relative;
+   box-shadow: 0px 10px 10px rgba(79, 78, 78, 0.795);
+   width: 100%;
+   height: 80px;
+}
+
+/* Style for H1 */
+.title {
+   margin: 0 auto;
+   z-index: 3;
+   text-align: center;
+   padding: 20px;
+   width: 40vw;
+}
+
+/* Set a position and style for a toggle */
+.header_button {
+   width: 50px;
+   height: 50px;
+   padding: 15px;
+   position: absolute;
+   z-index: 2;
+   margin: auto;
+   left: 0;
+   top: 0;
+   right: 1;
+   bottom: 0;
+
+}
+
+/* Style for a nav bar */
+.header_nav {
+   margin-left: -10px;
+   background-color: rgb(63, 63, 206);
+   height: 100vh;  
+   width: 30vw;
+   position: fixed;
+   top: -100vh;
+   transition: all 0.7s;
+   z-index: 1;
+   padding: 70px 0 0 30px;
+}
+
+.header_nav_menu a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.header_nav_menu a:visited {
+   text-decoration: none;
+   color: #fff;
+}
+
+/* Style for active nav bar */
+.header_nav.active {
+   top: 0vh;
+}
+
+/* Change style for a list */
+li {
+   list-style-type: none;
+   color: #fff;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 15pt;
+   padding-top: 20px;
+}
+
+/* Set a style for a logo */
+.logo>img {
+   width: 90px;
+   position: absolute;
+   margin: auto;
+   padding: 0 10px 0 0;
+   left: 1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+}
+
+/* Set a maximum width for a page */
+main {
+   max-width: 1200px;
+}
+
+/* Style for a first screen picture canoe.jpeg */
+.main-img {
+   width: 100%;
+   height: auto;
+}
+
+/* Style for a main title in a main section H2 */
+.main-title {
+   font-size: 3vw;
+   font-weight: 900;
+   color: #4d4a4a;
+   margin-top: 10px;
+}
+
+/* Set a line  */
+hr {
+   margin-top: 10px;
+}
+
+/*Style for a separate tours */
+.tours-city {
+   margin-top: 40px;
+   display: inline-block;
+}
+
+/* Style for a title in a tours H3 */
+.tours-city h3 {
+   font-size: 2vw;
+   font-weight: normal;
+}
+
+/* Set a line under title of tours  */
+.tours-city hr {
+   margin-top: 0;
+   border: 1px solid rgb(4, 136, 4)
+}
+
+/* Settings for a links in tours name H3  */
+.tours a:link, a:visited, a:active {
+   color: rgb(4, 136, 4);
+   text-decoration: none;
+}
+
+/* Set different style for a date in a tours */
+.tours-date {
+   margin-top: 20px;
+}
+
+/* Set a settings for a titles H4 "Summary" */
+.tours-title {
+   margin-top: 20px;
+   font-size: 1.3vw;
+   font-weight: 600;
+}
+
+/* Footer style */
+.footer_wrap {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.footer_items {
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+   width: 100%;
+   margin: 0 10%;
+   padding: 40px 0;
+   background-color: rgb(63, 63, 206);
+}
+
+.footer_item {
+   flex: 0 1 35%;
+   color: #fff;
+   padding: 40px;
+}
+
+.footer_links {
+   padding: 0 0 0 30%;
+}
+
+
+.footer_item a {
+   color: #fff;
+   text-decoration: none;
+}
+
+/* ----- ----- ------ Changing styles for a different screen ----- ----- ------ */
+@media (max-width: 800px) {
+   .title {
+      font-size: 26px;
+      padding: 40px;
+   }
+   .header_bar {
+      height: 150px;
+   }
+   .tours-city h3 {
+      font-size: 24px;
+   }
+   .header_nav {
+      width: 20vw;
+      padding: 130px 0 0 30px;
+   }
+   .main-title {
+      font-size: 28px;
+      padding: 5px;
+   }
+   .tours-title {
+      font-size: 18px;
+      line-height: 2;
+   }
+   section {
+      padding: 5px;
+   }
+}
+
+/* ----- ----- ------ Styling for php ----- ----- ------ */
+.main_php {
+   display: flex;
+   flex: 1 1 auto;
+   flex-wrap: nowrap;
+   min-height: 50vh;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   text-align: center;
+}
+
+.home_link {
+   margin-top: 5vh;
+}
+
+/* ----- ----- ------ Login page ----- ----- ------ */
+.login_form {
+   background-color: #e1e1e1;
+   height: 20vh;
+   border-radius: 5px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+   padding: 0 20px;
+
+}
+
+.login_form input {
+   border-radius: 5px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   height: 3vh;
+   font-size: 2vh;
+}
+
+
+.login_form h3 {
+   color: rgb(63, 63, 206);
+   text-transform: capitalize;
+   font-size: 25px;
+   margin: 20px 0;
+}
+
+.login_form .form-btn {
+   background: rgb(63, 63, 206);
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 2vh;
+   cursor: pointer;
+   height: 5vh;
+   border-radius: 5px;
+   width: 15vh;
+   margin: 0 10px;
+}
+
+.login_form .form-btn:hover {
+   color: #fff;
+   background-color: rgb(1, 1, 249);
+}
+
+.login_form a {
+   color: #054d99;
+   font-size: 2vh;
+}
+
+.login_form a:hover {
+   color: rgb(1, 1, 249);
+}
+
+.login_form #role {
+   width: 8vh;
+   font-size: 2vh;
+}
+
+/* ----- ----- ------ User page ----- ----- ------ */
+
+.choose_form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #e1e1e1;
+   height: 50vh;
+   width: 100vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   padding: 0 20px;
+
+}
+
+.choose_form h1 {
+   color: rgb(63, 63, 206);
+   margin: 10px 0;
+}
+
+.choose_form a {
+   background: rgb(63, 63, 206);
+   color: #fff;
+   text-decoration: none;
+   padding: 1.3vh 1.3vh;
+   font-size: 2vh;
+   cursor: pointer;
+   height: 5vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   width: 28vh;
+   margin: 0 10px;
+}
+
+.choose_form .btn {
+   margin: 20px 0;
+}
+
+.choose_form a:hover {
+   color: #fff;
+   background-color: rgb(1, 1, 249);
+}
+
+/* ----- ----- ------ Not working page ----- ----- ------ */
+.eror_form {
+   padding: 20px;
+   background-color: #eee;
+   height: 50vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   vertical-align: middle;
+}
+
+.eror_form h1 {
+   font-size: 30px;
+   text-transform: capitalize;
+   margin-top: 50px;
+   color: rgb(63, 63, 206);
+}
+
+.eror_form p {
+   line-height: 30vh;
+}
+
+.eror_form a {
+   font-size: 2.5vh;
+   color: rgb(63, 63, 206);
+   margin: 0 10px;
+}
+
+.eror_form a:hover {
+   color: rgb(1, 1, 249);
+
+}
+
+/* ----- ----- ------ New account page ----- ----- ------ */
+
+.account_form {
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   background: #fff;
+   text-align: center;
+   width: 600px;
+   background-color: #e1e1e1
+}
+
+.account_form h3 {
+   font-size: 30px;
+   margin-bottom: 10px;
+   color: rgb(63, 63, 206);
+}
+
+.account_form form input, .account_form form select {
+   width: 100%;
+   padding: 10px 15px;
+   font-size: 16px;
+   padding: 10px 0;
+   margin-bottom: 10px;
+   background: #fff;
+   border-radius: 5px;
+}
+
+.account_form form select option {
+   background: #fff;
+
+}
+
+.account_form .form-btn {
+   background: rgb(63, 63, 206);
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.account_form form .form-btn:hover {
+   background: rgb(1, 1, 249);
+   color: #fff;
+}
+
+.account_form form p {
+   margin-top: 10px;
+   font-size: 20px;
+   color: #5b5b5b;
+}
+
+.account_form form a {
+   color: #0857ac;
+   margin: 0 10px;
+}
+
+.account_form form a:hover {
+   color: rgb(1, 1, 249);
+
+}
+
+.account_form a {
+   color: #0857ac;
+   font-size: 20px;
+}
+
+.account_form a:hover {
+   color: rgb(1, 1, 249);
+
+}
+
+/* ----- ----- ------ Rest password ----- ----- ------ */
+
+.lost_pas {
+   padding: 100px;
+   background-color: #eee;
+   height: 40vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lost_pas h1 {
+   font-size: 30px;
+   text-transform: capitalize;
+   margin-bottom: 10px;
+   color: rgb(63, 63, 206);
+}
+
+.lost_pas p {
+   line-height: 10vh;
+   margin: 2vh;
+}
+
+.lost_pas #email {
+   border-radius: 5px;
+   width: 20vh;
+   height: 3vh;
+   text-align: center;
+}
+
+.lost_pas #btn {
+   background: rgb(63, 63, 206);
+   color: #fff;
+   border-radius: 5px;
+   text-transform: capitalize;
+   font-size: 1.5vh;
+   width: 12vh;
+   height: 3vh;
+   margin: 40px 0 0 0;
+   cursor: pointer;
+}
+
+.lost_pas #btn:hover {
+   background-color: rgb(1, 1, 249);
+}
+
+.lost_pas a {
+   color: rgb(63, 63, 206);
+}
+
+.lost_pas a:hover {
+   color: rgb(1, 1, 249);
+}
+
+/* ----- ----- ------ send email page ----- ----- ------ */
+.sendemail {
+   padding: 100px;
+   background-color: #eee;
+   height: 20vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sendemail_link {
+   margin-top: 50px;
+}
+
+.sendemail a {
+   background: rgb(63, 63, 206);
+   color: #fff;
+   padding: 1.3vh 1.3vh;
+   text-transform: capitalize;
+   font-size: 2vh;
+   cursor: pointer;
+   height: 5vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   width: 28vh;
+   margin: 20px 0;
+   text-decoration: none;
+}
+
+.sendemail a:hover {
+   background: rgb(1, 1, 249);
+}
+
+/* ----- ----- ------ Logout ----- ----- ------ */
+
+.logout {
+   padding: 100px;
+   background-color: #eee;
+   height: 20vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logout h1 {
+   color: rgb(63, 63, 206);
+   margin: 0 0 3vh 0;
+}
+
+.logout p {
+   margin-top: 5vh;
+}
+
+.logout a {
+   color: rgb(63, 63, 206);
+}
+
+.logout a:hover {
+   color: rgb(1, 1, 249);
+}
+
+/* ----- ----- ------ Contact ----- ----- ------ */
+
+.contact {
+   padding: 100px;
+   background-color: #eee;
+   height: 20vh;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+   color: rgb(63, 63, 206);
+   margin: 0 0 3vh 0;
+}
+
+.contact p {
+   line-height: 2vh;
+}
+
+.contact a {
+   color: rgb(63, 63, 206);
+}
+
+.contact a:hover {
+   color: rgb(1, 1, 249);
+}
+
+/* ----- ----- ------ All Adventures ----- ----- ------ */
+.all-ad{
+   margin: 0px 10px;
+}
+
+.all-h2 {
+   margin: 10 0px;
+   padding: 5px;
+}
+
+.tours_add {
+   color: rgb(4, 136, 4);
+}
+
+
+/* ----- ----- ------ Admin Confirm ----- ----- ------ */
+.ac-title {
+   margin: 30px 0 0 10px;
+}
+
+.admin_confirm {
+   min-height: 20vh;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   text-align: center;
+}
+
+.admin_confirm h2 {
+   color: #000;
+}
+
+.ac-text {
+   margin: 50px 0 0 10px;
+   font-size: 1.8vh;
+   color: #4d4a4a;
+}
+
+.ac-link {
+   margin: 200px 0;
+}
+
+.ac-link a:link,
+a:visited,
+a:active {
+   color: #4d4a4a;
+   font-size: 3.5vh;
+}
+/* ----- ----- ------ Admin add ----- ----- ------ */
+
+.add_book {
+   margin-top: 90px;
+   margin-bottom: 90px;
+}
